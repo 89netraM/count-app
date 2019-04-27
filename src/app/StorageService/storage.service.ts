@@ -30,4 +30,7 @@ export class StorageService implements StorageInterface {
 	async set(key: string, value: string): Promise<void> {
 		return this.service.set(key, value);
 	}
+	async del(key: string): Promise<void> {
+		return this.service.del(key);
+	}
 }

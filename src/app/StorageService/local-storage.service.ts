@@ -16,6 +16,9 @@ export class LocalStorageService implements StorageInterface {
 	setNow(key: string, value: string): void {
 		window.localStorage.setItem(key, value);
 	}
+	delNow(key: string): void {
+		window.localStorage.removeItem(key);
+	}
 
 	async has(key: string): Promise<boolean> {
 		return this.hasNow(key);
@@ -25,5 +28,8 @@ export class LocalStorageService implements StorageInterface {
 	}
 	async set(key: string, value: string): Promise<void> {
 		this.setNow(key, value);
+	}
+	async del(key: string): Promise<void> {
+		this.delNow(key);
 	}
 }

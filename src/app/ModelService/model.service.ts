@@ -78,6 +78,15 @@ export class ModelService {
 		]);
 	}
 
+	public async removeCounter(counter: CounterModel): Promise<void> {
+		this.ids.splice(this.ids.indexOf(counter.id), 1);
+
+		await Promise.all([
+			this.saveAllIds(),
+			this.storage.del(counter.id)
+		]);
+	}
+
 	private fromString(s: string): CounterModel {
 		const p: Array<string> = s.split(",");
 

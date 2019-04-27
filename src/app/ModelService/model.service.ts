@@ -8,7 +8,7 @@ import { CounterModel } from "./counter-model";
 export class ModelService {
 	private static readonly keyIds: string = "counterIds";
 
-	public ids: Array<string> = null;
+	private ids: Array<string> = null;
 	public counters: Array<CounterModel> = null;
 
 	public constructor(private storage: StorageService) { }

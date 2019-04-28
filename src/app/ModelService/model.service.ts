@@ -18,8 +18,9 @@ export class ModelService {
 		await this.downloadAllCounters();
 	}
 	private async downloadAllIds(): Promise<void> {
-		if (await this.storage.has(ModelService.keyIds)) {
-			this.ids = (await this.storage.get(ModelService.keyIds)).split(",");
+		const idString: string = await this.storage.get(ModelService.keyIds);
+		if (idString != null && idString.length > 0) {
+			this.ids = idString.split(",");
 		}
 		else {
 			this.ids = new Array<string>();
@@ -80,6 +81,7 @@ export class ModelService {
 
 	public async removeCounter(counter: CounterModel): Promise<void> {
 		this.ids.splice(this.ids.indexOf(counter.id), 1);
+		this.counters.splice(this.counters.indexOf(counter), 1);
 
 		await Promise.all([
 			this.saveAllIds(),

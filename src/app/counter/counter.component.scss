@@ -21,6 +21,9 @@ section {
 		button {
 			width: 100%;
 			height: 100%;
+
+			font-size: 1.5em;
+			vertical-align: top;
 		}
 	}
 
@@ -43,11 +46,20 @@ section {
 
 	input {
 		grid-column: 2;
-		[type="range"] {
+		&[type="range"] {
 			grid-row: 1;
 		}
-		[type="text"] {
+		&[type="text"] {
 			grid-row: 2;
+
+			border: 1px solid rgb(128, 128, 128);
+			background-color: rgba(128, 128, 128, 0.05);
+
+			text-align: center;
+
+			&:focus {
+				background-color: #ffffff;
+			}
 		}
 	}
 
@@ -63,8 +75,8 @@ section {
 	}
 
 	// The filp
-	transition: all 1s linear;
-	transition-delay: 1s;
+	transition: transform 0.3s linear, visibility 0.3s linear;
+	transition-delay: 0.3s;
 
 	&.fliped {
 		transition-delay: 0s;

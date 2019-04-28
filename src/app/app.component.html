@@ -3,4 +3,5 @@
 </nav>
 <main>
 	<app-counter *ngFor="let counter of service.counters" [model]="counter"></app-counter>
+	<button class="round" (click)="addCounter()">+</button>
 </main>

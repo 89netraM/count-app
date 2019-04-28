@@ -16,3 +16,14 @@ html, body {
 button {
 	outline: none !important;
 }
+
+button.round {
+	padding: 0px;
+
+	display: block;
+	border: none;
+	border-radius: 50%;
+	background: rgba(128, 128, 128, 0.5);
+	
+	text-align: center;
+}

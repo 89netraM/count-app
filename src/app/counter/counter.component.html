@@ -1,27 +1,27 @@
 <section class="front" [class.fliped]="fliped" [style.backgroundColor]="color">
 	<div class="big">
-		<button (click)="change(-1)">-</button>
+		<button class="round" (click)="change(-1)">-</button>
 	</div>
 
 	<p>{{model.count}}</p>
 	<p>{{model.name}}</p>
 	
 	<div class="big">
-		<button (click)="change(1)">+</button>
+		<button class="round" (click)="change(1)">+</button>
 	</div>
 	
 	<button class="flip" (click)="fliped = true">⋯</button>
 </section>
 <section class="back" [class.fliped]="!fliped" [style.backgroundColor]="color">
 	<div class="big">
-		<button (click)="delete()" title="Delete">🗑</button>
+		<button class="round" (click)="delete()" title="Delete">🗑</button>
 	</div>
 
 	<input type="range" min="0" max="360" [(ngModel)]="model.color"/>
 	<input type="text" [(ngModel)]="model.name"/>
 
 	<div class="big">
-		<button (click)="reset()" title="Reset">🔁</button>
+		<button class="round" (click)="reset()" title="Reset">🔁</button>
 	</div>
 
 	<button class="flip" (click)="fliped = false; save();">&times;</button>

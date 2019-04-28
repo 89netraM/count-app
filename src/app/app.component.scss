@@ -13,3 +13,9 @@ nav {
 		font-weight: normal;
 	}
 }
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+}

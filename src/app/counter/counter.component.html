@@ -1,2 +1,14 @@
-<p>{{model.name}}</p>
-<p>{{model.count}}</p>
+<section class="front" [style.backgroundColor]="color">
+	<div class="big">
+		<button (click)="change(-1)">-</button>
+	</div>
+
+	<p>{{model.count}}</p>
+	<p>{{model.name}}</p>
+	
+	<div class="big">
+		<button (click)="change(1)">+</button>
+	</div>
+	
+	<button class="flip">⋯</button>
+</section>

@@ -15,7 +15,20 @@ nav {
 }
 
 main {
+	width: 100%;
+	height: auto;
+
 	display: flex;
 	flex-direction: column;
 	align-content: stretch;
+
+	position: relative;
+
+	button {
+		width: 3.6em;
+		height: 3.6em;
+		margin-top: 1em;
+
+		align-self: center;
+	}
 }

@@ -10,4 +10,8 @@ export class AppComponent {
 	public constructor(public service: ModelService) {
 		this.service.downloadAll();
 	}
+
+	public addCounter(): void {
+		this.service.addCounter();
+	}
 }

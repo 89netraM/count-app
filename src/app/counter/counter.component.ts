@@ -1,6 +1,6 @@
 import { Component, Input, HostBinding } from "@angular/core";
 import { CounterModel } from "../ModelService/counter-model";
-import { ModelService } from '../ModelService/model.service';
+import { ModelService } from "../ModelService/model.service";
 
 @Component({
 	selector: "app-counter",
@@ -21,6 +21,18 @@ export class CounterComponent {
 
 	public change(by: number): void {
 		this.model.count += by;
+		this.save();
+	}
+
+	public delete(): void {
+		this.service.removeCounter(this.model);
+	}
+
+	public reset(): void {
+		this.model.count = 0;
+	}
+
+	public save(): void {
 		this.service.saveCounter(this.model);
 	}
 }

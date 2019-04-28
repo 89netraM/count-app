@@ -56,6 +56,16 @@ section {
 		}
 	}
 
+	input {
+		grid-column: 2;
+		[type="range"] {
+			grid-row: 1;
+		}
+		[type="text"] {
+			grid-row: 2;
+		}
+	}
+
 	.flip {
 		position: absolute;
 		top: 0px;

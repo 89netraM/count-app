@@ -15,6 +15,8 @@ export class CounterComponent {
 		return "hsl(" + this.model.color + ", 64%, 59%)";
 	}
 
+	public fliped: boolean = false;
+
 	public constructor(private service: ModelService) { }
 
 	public change(by: number): void {

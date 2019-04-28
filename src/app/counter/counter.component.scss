@@ -1,9 +1,16 @@
+:host {
+	position: relative;
+}
+
 section {
 	display: grid;
 	grid-template-columns: 4.5em 1fr 4.5em;
 	grid-template-rows: 3em 1.5em;
 
-	position: relative;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
 
 	.big {
 		padding: 16.667%;
@@ -56,5 +63,17 @@ section {
 
 		border: none;
 		background: none;
+
+		cursor: pointer;
+	}
+
+	// The filp
+	transition: all 1s linear;
+	transition-delay: 1s;
+
+	&.fliped {
+		transition-delay: 0s;
+		transform: rotateX(90deg);
+		visibility: hidden;
 	}
 }

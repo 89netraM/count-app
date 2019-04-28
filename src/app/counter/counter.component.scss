@@ -7,11 +7,6 @@ section {
 	grid-template-columns: 4.5em 1fr 4.5em;
 	grid-template-rows: 3em 1.5em;
 
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-
 	.big {
 		padding: 16.667%;
 
@@ -85,5 +80,12 @@ section {
 		transition-delay: 0s;
 		transform: rotateX(90deg);
 		visibility: hidden;
+	}
+
+	&.back {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
 	}
 }

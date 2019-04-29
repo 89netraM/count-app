@@ -7,6 +7,9 @@ section {
 	grid-template-columns: 4.5em 1fr 4.5em;
 	grid-template-rows: 3em 1.5em;
 
+	padding-bottom: 0.25em;
+	border-bottom: 0.5em solid;
+
 	.big {
 		padding: 16.667%;
 

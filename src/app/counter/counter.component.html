@@ -1,4 +1,4 @@
-<section class="front" [class.fliped]="fliped" [style.backgroundColor]="color">
+<section class="front" [class.fliped]="fliped" [style.backgroundColor]="color" [style.borderBottomColor]="borderColor">
 	<div class="big">
 		<button class="round" (click)="change(-1)">-</button>
 	</div>
@@ -12,7 +12,7 @@
 	
 	<button class="flip" (click)="fliped = true">⋯</button>
 </section>
-<section class="back" [class.fliped]="!fliped" [style.backgroundColor]="color">
+<section class="back" [class.fliped]="!fliped" [style.backgroundColor]="color" [style.borderBottomColor]="borderColor">
 	<div class="big">
 		<button class="round" (click)="delete()" title="Delete">🗑</button>
 	</div>

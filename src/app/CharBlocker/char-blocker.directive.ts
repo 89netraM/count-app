@@ -9,9 +9,7 @@ export class CharBlockerDirective {
 
 	@HostListener("keydown", ["$event"])
 	public keydown(e: KeyboardEvent): void {
-		console.log(e);
 		if (this.chars.indexOf(e.key) !== -1) {
-			console.log("Block");
 			e.preventDefault();
 		}
 	}

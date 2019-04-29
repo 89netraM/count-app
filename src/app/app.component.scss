@@ -17,6 +17,7 @@ nav {
 
 main {
 	width: 100%;
+	max-width: 30em;
 	height: auto;
 
 	display: flex;
@@ -24,6 +25,8 @@ main {
 	align-content: stretch;
 
 	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0px);
 
 	button {
 		width: 2.4em;

@@ -47,6 +47,8 @@ section {
 	input {
 		grid-column: 2;
 		&[type="range"] {
+			width: 100%;
+
 			grid-row: 1;
 		}
 		&[type="text"] {

@@ -80,12 +80,14 @@ section {
 	}
 
 	// The filp
-	transition: transform 0.3s linear, visibility 0.3s linear;
-	transition-delay: 0.3s;
+	transform: rotate3d(1, 0, 0, 0deg);
+	transition: transform 0.25s ease-out, visibility 0.25s ease-out;
+	transition-delay: 0.25s;
 
 	&.fliped {
+		transition: transform 0.25s ease-in, visibility 0.25s ease-in;
 		transition-delay: 0s;
-		transform: rotateX(90deg);
+		transform: rotate3d(1, 0, 0, 90deg);
 		visibility: hidden;
 	}
 

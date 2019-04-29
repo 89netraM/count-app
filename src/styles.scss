@@ -5,12 +5,14 @@ html, body {
 	padding: 0px;
 
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f0f0f0;
 
 	touch-action: manipulation;
 }
 
 * {
 	box-sizing: border-box;
+	color: #ffffff;
 }
 
 button, input {
@@ -23,7 +25,8 @@ button.round {
 	display: block;
 	border: none;
 	border-radius: 50%;
-	background: rgba(128, 128, 128, 0.5);
+	background: rgba(0, 0, 0, 0.3);
+	font-size: 1.5rem;
 	
 	text-align: center;
 }

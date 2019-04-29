@@ -12,11 +12,11 @@ export class CounterComponent {
 	public readonly model: CounterModel;
 
 	public get color(): string {
-		return "hsl(" + this.model.color + ", 64%, 59%)";
+		return "hsl(" + this.model.color + ", 100%, 50%)";
 	}
-	public get borderColor(): string {
-		return "hsl(" + this.model.color + ", 64%, 49%)";
-	}
+	// public get borderColor(): string {
+	// 	return "hsl(" + this.model.color + ", 64%, 49%)";
+	// }
 
 	public get name(): string {
 		return this.model.name;

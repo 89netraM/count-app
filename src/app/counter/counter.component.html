@@ -1,4 +1,4 @@
-<section class="front" [class.fliped]="fliped" [style.backgroundColor]="color" [style.borderBottomColor]="borderColor">
+<section class="front" [class.fliped]="fliped" [style.backgroundColor]="color">
 	<div class="big">
 		<button class="round" (click)="change(-1)">-</button>
 	</div>
@@ -12,7 +12,7 @@
 	
 	<button class="flip" (click)="fliped = true">⋯</button>
 </section>
-<section class="back" [class.fliped]="!fliped" [style.backgroundColor]="color" [style.borderBottomColor]="borderColor">
+<section class="back" [class.fliped]="!fliped" [style.backgroundColor]="color">
 	<div class="big">
 		<button class="round" (click)="delete()" title="Delete">🗑</button>
 	</div>
@@ -24,5 +24,5 @@
 		<button class="round" (click)="reset()" title="Reset">🔁</button>
 	</div>
 
-	<button class="flip" (click)="fliped = false; save();">x</button>
+	<button class="flip" (click)="fliped = false; save();">✕</button>
 </section>

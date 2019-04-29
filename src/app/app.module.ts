@@ -4,11 +4,13 @@ import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
 import { CounterComponent } from "./counter/counter.component";
+import { CharBlockerDirective } from "./CharBlocker/char-blocker.directive";
 
 @NgModule({
 	declarations: [
 		AppComponent,
-		CounterComponent
+		CounterComponent,
+		CharBlockerDirective
 	],
 	imports: [
 		BrowserModule,

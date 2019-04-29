@@ -18,7 +18,7 @@
 	</div>
 
 	<input type="range" min="0" max="360" [(ngModel)]="model.color"/>
-	<input type="text" [(ngModel)]="model.name"/>
+	<input type="text" [(ngModel)]="name" charBlocker=","/>
 
 	<div class="big">
 		<button class="round" (click)="reset()" title="Reset">🔁</button>

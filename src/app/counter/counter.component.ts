@@ -15,6 +15,13 @@ export class CounterComponent {
 		return "hsl(" + this.model.color + ", 64%, 59%)";
 	}
 
+	public get name(): string {
+		return this.model.name;
+	}
+	public set name(value: string) {
+		this.model.name = value.replace(/,/g, "");
+	}
+
 	public fliped: boolean = false;
 
 	public constructor(private service: ModelService) { }
